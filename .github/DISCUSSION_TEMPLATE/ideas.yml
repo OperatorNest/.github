@@ -1,0 +1,42 @@
+title: "[Idea] "
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - "@operatornest/convex-razorpay"
+        - "@operatornest/convex-zoho-cpaas"
+        - "@operatornest/convex-models-dev"
+        - "@operatornest/convex-web-push"
+        - Multiple components
+    validations:
+      required: true
+  - type: textarea
+    id: user-problem
+    attributes:
+      label: User problem
+      description: Who encounters this problem, and what are they trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Describe the behavior or API you would like.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Include workarounds or other approaches you considered.
+    validations:
+      required: false
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility
+      description: Note any migration, runtime, or backwards-compatibility implications you foresee.
+    validations:
+      required: false

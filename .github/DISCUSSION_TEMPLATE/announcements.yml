@@ -1,0 +1,43 @@
+title: "[Announcement] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Updates from OperatorNest maintainers about open-source Convex components.
+  - type: input
+    id: affected-components
+    attributes:
+      label: Affected components
+      description: Name the packages or say "all components".
+      placeholder: "@operatornest/convex-web-push"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Include the release version or say "not version-specific".
+      placeholder: "1.2.3"
+    validations:
+      required: true
+  - type: textarea
+    id: what-changed
+    attributes:
+      label: What changed
+      description: Summarize the update and its impact.
+    validations:
+      required: true
+  - type: textarea
+    id: migration-steps
+    attributes:
+      label: Migration steps
+      description: List any action users need to take, or say "none".
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
+      description: Link to releases, documentation, or related issues.
+    validations:
+      required: false

@@ -1,0 +1,56 @@
+title: "[Question] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Questions are answered by maintainers and community members on a volunteer, best-effort basis.
+        **Remove API keys, payment details, phone numbers, personal data, and other secrets from examples and logs before posting.** Report vulnerabilities through the affected repository's private security advisory flow instead.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - "@operatornest/convex-razorpay"
+        - "@operatornest/convex-zoho-cpaas"
+        - "@operatornest/convex-models-dev"
+        - "@operatornest/convex-web-push"
+    validations:
+      required: true
+  - type: input
+    id: package-version
+    attributes:
+      label: Package version
+      placeholder: "1.2.3"
+    validations:
+      required: true
+  - type: dropdown
+    id: runtime
+    attributes:
+      label: Runtime
+      options:
+        - Convex cloud
+        - Self-hosted Convex
+        - Local backend
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Describe the behavior you need help with and the result you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: what-tried
+    attributes:
+      label: What you tried
+      description: Include relevant setup and troubleshooting steps.
+    validations:
+      required: true
+  - type: textarea
+    id: redacted-example
+    attributes:
+      label: Redacted example
+      description: Share the smallest useful code sample or log excerpt with secrets and personal data removed.
+    validations:
+      required: false
